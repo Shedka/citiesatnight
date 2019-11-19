@@ -39,10 +39,10 @@ SWAP: explain
 
 
 # References
-[1] https://arxiv.org/pdf/1801.01465.pdf
-[2] https://www.researchgate.net/publication/319637870_Quantum_Image_Processing_and_Its_Application_to_Edge_Detection_Theory_and_Experiment
-[3] https://arxiv.org/pdf/1812.11042.pdf
-[4] https://www.jstage.jst.go.jp/article/fss/25/0/25_0_185/_pdf
-[5] https://www.researchgate.net/publication/333585825_Quantum_Image_Edge_Detection_Algorithm
-[6] https://pdfs.semanticscholar.org/b1d1/e8a9d6173458687bdfdc5a654423444f15b0.pdf
+- [1] https://arxiv.org/pdf/1801.01465.pdf
+- [2] https://www.researchgate.net/publication/319637870_Quantum_Image_Processing_and_Its_Application_to_Edge_Detection_Theory_and_Experiment
+- [3] https://arxiv.org/pdf/1812.11042.pdf
+- [4] https://www.jstage.jst.go.jp/article/fss/25/0/25_0_185/_pdf
+- [5] https://www.researchgate.net/publication/333585825_Quantum_Image_Edge_Detection_Algorithm
+- [6] https://pdfs.semanticscholar.org/b1d1/e8a9d6173458687bdfdc5a654423444f15b0.pdf
 
