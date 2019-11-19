@@ -31,14 +31,18 @@ This is step can be performed using multiple Python classical image processing l
 - **Step 2: Quantum Encoding**
 The quantum encoding or Quantum Image Representation (QImR) step involves the transformation of the data from a classical to a quantum image representation model [2]. The chosen quantum representation model is key to determine the types of processing tasks and how well they can be performed. After studying different proposals such as NEQR [3], in order to develop our MVP, we have selected to apply Flexible Representation of Quantum Images (FRQI) [4]. This allows us to encode an image of size *m = n x n* (pixels) into *log2(m)* qubits. One of the drawbacks of this representation is the requirement of *m* gates to perform the encoding of such an image.
 
-- **Step 3: Image Preparation**
+- **Step 3: Quantum Edge Detection**
+In classical image processing, one of the most common steps preceding image matching is edge detection. Several papers have claimed the computational advantage of quantum edge detection compared to the classical counterpart [1], and there have been proposed quantum models that provide a proof of concept such as [2] and [5].  Some other ideas based on the classical approach would be to use quantum support vector machines, inspired by [6].
 
-- **Step 4: Quantum image matching**
+- **Step 4: Quantum Image Matching**
+SWAP: explain
 
 
 # References
 [1] https://arxiv.org/pdf/1801.01465.pdf
-[2] 
-[3]
+[2] https://www.researchgate.net/publication/319637870_Quantum_Image_Processing_and_Its_Application_to_Edge_Detection_Theory_and_Experiment
+[3] https://arxiv.org/pdf/1812.11042.pdf
 [4] https://www.jstage.jst.go.jp/article/fss/25/0/25_0_185/_pdf
+[5] https://www.researchgate.net/publication/333585825_Quantum_Image_Edge_Detection_Algorithm
+[6] https://pdfs.semanticscholar.org/b1d1/e8a9d6173458687bdfdc5a654423444f15b0.pdf
 
