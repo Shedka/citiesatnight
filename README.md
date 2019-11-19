@@ -9,7 +9,7 @@ NASA has a database with almost 1 million cluttered, unlabeled pictures taken fr
 We think the answer is YES!, and for this hackathon we have decided to explore the benefits quantum computing can bring to this and many other computer vision based science intiatives, using current public available tools such as IBM Qiskit.
 
 # Goals
-The aim of the project is to develop a python-based module to perform image matching using quantum computing tools (Qiskit). As an inital approach, the image matching process has been divided into the following tasks:
+The aim of the project is to develop a Python-based module to perform image matching using quantum computing tools (Qiskit). As an inital approach, the image matching process has been divided into the following tasks:
 
 1. Classical image preparation 
 2. Quantum encoding
@@ -23,12 +23,15 @@ These tasks will be studied in order to fullfill the **main goal of the project:
 - **Step 1: Image Preparation**
 
 This step involves preparing the inital images to adapt our problem to the scope of the hackathon by:
-    - changing from RGB to grayscale format
-    - reducing the resolution to 32 x 32 pixels (this will later mean using 24 qubits in our coputation, with the current limit of the qasm simulator being 32 quibts)
-    - discarding particularly challenging pictures: those that are cropped, taken from a strange perspective.... 
+   - changing from RGB to grayscale format
+   - reducing the resolution to 32 x 32 pixels (this will later mean using 24 qubits in our coputation, with the current limit of the qasm simulator being 32 quibts)
+   - discarding particularly challenging pictures: those that are cropped, taken from a strange perspective.... 
 
+This is step can be performed using multiple Python classical image processing libraries such as PIL, OpenCV, etc.
 
 - **Step 2: Quantum Encoding**
+
+The Quantum Encoding step is one of the keys for being able to carry out quantum image processing, and it can provide . It also provides
 
 - **Step 3: Image Preparation**
 
