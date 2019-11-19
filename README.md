@@ -2,7 +2,7 @@
 Quantum image processing for mapping the Earth at night.
 
 # Project Background and Motivation
-Cities at Night (www.citiesatnight.org) is an ongoing project by Alejandro Sanchez de Miguel (U. of Exeter) et al. focused on the creation of a hight resolution map of the Earth at night, using color photographs taken by astronauts onboard the ISS. 
+Cities at Night (www.citiesatnight.org) is an ongoing project by Alejandro Sanchez de Miguel (U. of Exeter) et al. focused on the creation of a high resolution map of the Earth at night, using color photographs taken by astronauts onboard the ISS. 
 
 NASA has a database with almost 1 million cluttered, unlabeled pictures taken from space over the years. In order to create a high resolution world map, these photographs must be matched with their precise location in the globe's surface, a task for which the use of classical machine learning algorithms has been deemed ineffective. The current alternative has been to use citizen science and benefit from the manual matchings carried out by thousands of volunteers, but .... could this approach be improved?
 
