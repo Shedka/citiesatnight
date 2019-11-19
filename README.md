@@ -11,17 +11,21 @@ We think the answer is YES!, and for this hackathon we have decided to explore t
 # Goals
 The aim of the project is to develop a python-based module to perform image matching using quantum computing tools (Qiskit). As an inital approach, the image matching process has been divided into the following tasks:
 
-1/ Classical image preparation 
-2/ Quantum encoding
-3/ Quantum edge detection
-4/ Quantum matching
+1. Classical image preparation 
+2. Quantum encoding
+3. Quantum edge detection
+4. Quantum matching
 
-These tasks will be studied in order to fullfill the main goal of the project: a minimally viable product (MVP) where 3 classical images (1 reference and 2 proposals) are inputted, encoded, compared and matched; such as the proposal that best fits the reference is matched with it.  
+These tasks will be studied in order to fullfill the **main goal of the project: a minimally viable product (MVP) where 3 classical images (1 reference and 2 proposals) are inputted, encoded, compared and matched**; such as the proposal that best fits the reference is matched with it.  
 
 # Proposed Implementation
 
 - **Step 1: Image Preparation**
-This step has been 
+
+This step involves preparing the inital images to adapt our problem to the scope of the hackathon by:
+  - changing from RGB to grayscale format
+  - reducing the resolution to 32 x 32 pixels (this will later mean using 24 qubits in our coputation, with the current limit of the qasm simulator being 32 quibts)
+  - discarding particularly challenging pictures: those that are cropped, taken from a strange perspective.... 
 
 
 - **Step 2: Quantum Encoding**
