@@ -23,9 +23,9 @@ These tasks will be studied in order to fullfill the **main goal of the project:
 - **Step 1: Image Preparation**
 
 This step involves preparing the inital images to adapt our problem to the scope of the hackathon by:
-  - changing from RGB to grayscale format
-  - reducing the resolution to 32 x 32 pixels (this will later mean using 24 qubits in our coputation, with the current limit of the qasm simulator being 32 quibts)
-  - discarding particularly challenging pictures: those that are cropped, taken from a strange perspective.... 
+    - changing from RGB to grayscale format
+    - reducing the resolution to 32 x 32 pixels (this will later mean using 24 qubits in our coputation, with the current limit of the qasm simulator being 32 quibts)
+    - discarding particularly challenging pictures: those that are cropped, taken from a strange perspective.... 
 
 
 - **Step 2: Quantum Encoding**
