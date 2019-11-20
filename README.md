@@ -41,6 +41,8 @@ For this project, we have implemented the work proposed in [1] that allows to de
 - **Step 4: Quantum Image Matching**
 Image matching involves finding similarities between images. These similiarties range from pixel to pixel differences to morphological properties. The qubits used to encode both the test and reference images represent the density matrices for each image. These density matrices can then be compared via a quantum based similarity test. Specifically, this involves a standard SWAP test [6]. 
 
+# License
+**Apache 2.0**
 
 # References
 - [1] https://arxiv.org/pdf/1801.01465.pdf
