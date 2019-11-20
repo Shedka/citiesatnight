@@ -29,20 +29,23 @@ This step involves preparing the inital images to adapt our problem to the scope
 This is step can be performed using multiple Python classical image processing libraries such as PIL, OpenCV, etc.
 
 - **Step 2: Quantum Encoding**
-The quantum encoding or Quantum Image Representation (QImR) step involves the transformation of the data from a classical to a quantum image representation model [2]. The chosen quantum representation model is key to determine the types of processing tasks and how well they can be performed. After studying different proposals such as NEQR [3], in order to develop our MVP, we have selected to apply Flexible Representation of Quantum Images (FRQI) [4]. This allows us to encode an image of size *m = n x n* (pixels) into *log2(m)* qubits. One of the drawbacks of this representation is the requirement of *m* gates to perform the encoding of such an image.
+The quantum encoding or Quantum Image Representation (QImR) step involves the transformation of the data from a classical to a quantum image representation model [1]. The chosen quantum representation model is key to determine the types of processing tasks and how well they can be performed. After studying different proposals such as NEQR [2], in order to develop our MVP, we have selected to apply Flexible Representation of Quantum Images (FRQI) [3]. This allows us to encode an image of size *m = n x n* (pixels) into *log2(m)* qubits. One of the drawbacks of this representation is the requirement of *m* gates to perform the encoding of such an image.
+
+A proposed alternative is the use of a a "log concave based" encoding, of which we have proposed a proof of concept with a downscaled example.
 
 - **Step 3: Quantum Edge Detection**
-In classical image processing, one of the most common steps preceding image matching is edge detection. Several papers have claimed the computational advantage of quantum edge detection compared to the classical counterpart [1], and there have been proposed quantum models that provide a proof of concept such as [2] and [5].  Some other ideas based on the classical approach would be to use quantum support vector machines, inspired by [6].
+In classical image processing, one of the most common steps preceding image matching is edge detection. Several papers have claimed the computational advantage of quantum edge detection compared to the classical counterpart [1], and there have been proposed quantum models that provide a proof of concept such as [1] and [4].  Some other ideas based on the classical approach would be to use quantum support vector machines, inspired by [5].
+
+For this project, we have implemented the work proposed in [1] that allows to detect horizontal and vertical edges, and find vertices by assesing their overlap in order to construct the image's contour.
 
 - **Step 4: Quantum Image Matching**
-Image matching involves finding similarities between images. These similiarties range from pixel to pixel differences to morphological properties. The qubits used to encode both the test and reference images represent the density matrices for each image. These density matrices can then be compared via a quantum based similarity test. Specifically, this involves a standard SWAP test [7]. 
+Image matching involves finding similarities between images. These similiarties range from pixel to pixel differences to morphological properties. The qubits used to encode both the test and reference images represent the density matrices for each image. These density matrices can then be compared via a quantum based similarity test. Specifically, this involves a standard SWAP test [6]. 
 
 
 # References
 - [1] https://arxiv.org/pdf/1801.01465.pdf
-- [2] https://www.researchgate.net/publication/319637870_Quantum_Image_Processing_and_Its_Application_to_Edge_Detection_Theory_and_Experiment
-- [3] https://arxiv.org/pdf/1812.11042.pdf
-- [4] https://www.jstage.jst.go.jp/article/fss/25/0/25_0_185/_pdf
-- [5] https://www.researchgate.net/publication/333585825_Quantum_Image_Edge_Detection_Algorithm
-- [6] https://pdfs.semanticscholar.org/b1d1/e8a9d6173458687bdfdc5a654423444f15b0.pdf
-- [7] https://arxiv.org/abs/1803.04114
+- [2] https://arxiv.org/pdf/1812.11042.pdf
+- [3] https://www.jstage.jst.go.jp/article/fss/25/0/25_0_185/_pdf
+- [4] https://www.researchgate.net/publication/333585825_Quantum_Image_Edge_Detection_Algorithm
+- [5] https://pdfs.semanticscholar.org/b1d1/e8a9d6173458687bdfdc5a654423444f15b0.pdf
+- [6] https://arxiv.org/abs/1803.04114
