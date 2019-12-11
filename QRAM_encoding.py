@@ -13,23 +13,6 @@ def euclidean_norm(sub_distribution):
         return norm(sub_distribution)
 
 
-#def is_distribution(distribution): #is the given array a stochastic vector ? Must be normalized (norm 1)
-#    distribution = np.array(distribution)
-#    size = distribution.size
-#    distribution = lineic_encoding(distribution, vertical=False)
-#    is_distribution = False
-#    is_normalized = False
-#    is_positive = True
-#    if np.isclose(sum(distribution), 1, atol=1e-04):
-#        is_normalized = True
-#    for i in range(size):
-#        if distribution[i] < 0:
-#            is_positive = False
-#    if is_normalized == True and is_positive == True:
-#        is_distribution = True
-#    return is_distribution
-
-
 def is_log_concave(distribution): #is the given array a log-concave stochastic vector ?
     something = True #have to define what condition must respect a log-concave distribution
     is_log_concave = False
