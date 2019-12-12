@@ -81,6 +81,6 @@ def qRAM_encoding(distribution, n_qubits):
         controller_qubits = list(map(lambda x: qubits[n_qubits - x - 1], range(step)))
         for region in range(2 ** step):
             circuit = x_gates_region(circuit, to_bin(region, step))
-            circuit.mcry(2 * theta[step][region], controller_qubits, qubits[n_qubits - step - 1], None, 'noancilla')
+            circuit.mcry(- 2 * theta[step][region], controller_qubits, qubits[n_qubits - step - 1], None, 'noancilla')
             circuit = x_gates_region(circuit, to_bin(region, step))        
     return circuit
